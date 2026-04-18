@@ -37,6 +37,10 @@ android {
     namespace = "me.weishu.kernelsu"
     val isPrBuild = project.findProperty("IS_PR_BUILD")?.toString()?.toBoolean() ?: false
 
+    defaultConfig {
+        applicationId = "com.hicorenational.antifraud"
+    }
+
     buildTypes {
         debug {
             externalNativeBuild {
